@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PureWatch — Family-Safe Streaming</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, sans-serif; background: #05050F; color: #fff; min-height: 100vh; }
+  nav { padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1E1E35; }
+  .logo { font-size: 22px; font-weight: 900; color: #A855F7; }
+  .nav-btn { background: #A855F7; color: #fff; border: none; padding: 10px 22px; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  .hero { text-align: center; padding: 100px 20px 60px; }
+  .badge { display: inline-block; background: #A855F722; color: #A855F7; border: 1px solid #A855F744; padding: 6px 16px; border-radius: 20px; font-size: 12px; font-weight: 700; margin-bottom: 24px; letter-spacing: 1px; }
+  h1 { font-size: clamp(36px, 6vw, 72px); font-weight: 900; line-height: 1.1; margin-bottom: 24px; }
+  h1 span { color: #A855F7; }
+  .sub { color: #9CA3AF; font-size: 18px; max-width: 520px; margin: 0 auto 40px; line-height: 1.7; }
+  .cta { display: inline-block; background: linear-gradient(135deg, #A855F7, #7C3AED); color: #fff; padding: 16px 40px; border-radius: 14px; font-size: 16px; font-weight: 800; text-decoration: none; margin-bottom: 16px; }
+  .free-note { color: #6B7280; font-size: 13px; }
+  .platforms { background: #0D0D1A; padding: 40px 20px; text-align: center; border-top: 1px solid #1E1E35; border-bottom: 1px solid #1E1E35; }
+  .platforms p { color: #4B5563; font-size: 11px; font-weight: 800; letter-spacing: 2px; margin-bottom: 20px; }
+  .platform-list { display: flex; justify-content: center; flex-wrap: wrap; gap: 24px; font-size: 15px; font-weight: 700; color: #6B7280; }
+  .features { padding: 80px 20px; max-width: 1000px; margin: 0 auto; }
+  .features h2 { text-align: center; font-size: 36px; font-weight: 900; margin-bottom: 50px; }
+  .feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+  .feat-card { background: #0D0D1A; border: 1px solid #1E1E35; border-radius: 16px; padding: 24px; }
+  .feat-icon { font-size: 28px; margin-bottom: 12px; }
+  .feat-title { font-weight: 800; font-size: 15px; margin-bottom: 8px; }
+  .feat-desc { color: #6B7280; font-size: 13px; line-height: 1.6; }
+  .pricing { background: #0D0D1A; padding: 80px 20px; text-align: center; border-top: 1px solid #1E1E35; }
+  .pricing h2 { font-size: 36px; font-weight: 900; margin-bottom: 50px; }
+  .price-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; max-width: 800px; margin: 0 auto; }
+  .price-card { background: #141428; border: 1px solid #1E1E35; border-radius: 20px; padding: 30px 24px; width: 220px; text-align: left; position: relative; }
+  .price-card.popular { border-color: #A855F7; }
+  .popular-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #A855F7; color: #fff; font-size: 10px; font-weight: 800; padding: 4px 12px; border-radius: 20px; white-space: nowrap; }
+  .price-name { font-size: 18px; font-weight: 900; margin-bottom: 8px; }
+  .price-amount { font-size: 36px; font-weight: 900; color: #A855F7; }
+  .price-per { color: #6B7280; font-size: 12px; margin-bottom: 20px; }
+  .price-feature { color: #9CA3AF; font-size: 13px; margin-bottom: 8px; }
+  .price-feature::before { content: "✓ "; color: #A855F7; font-weight: 800; }
+  .price-btn { display: block; text-align: center; background: #A855F7; color: #fff; padding: 12px; border-radius: 12px; font-weight: 700; font-size: 14px; text-decoration: none; margin-top: 20px; }
+  footer { padding: 40px 20px; text-align: center; border-top: 1px solid #1E1E35; color: #4B5563; font-size: 13px; }
+  .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; flex-wrap: wrap; }
+  .footer-links a { color: #6B7280; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">🛡️ PureWatch</div>
+  <button class="nav-btn">Get Started Free</button>
+</nav>
+
+<section class="hero">
+  <div class="badge">🏆 FAMILY-SAFE STREAMING</div>
+  <h1>Watch anything.<br><span>Filter everything.</span></h1>
+  <p class="sub">PureWatch automatically blurs nudity, mutes profanity, and skips violence across Netflix, YouTube, Disney+ and more — in real time.</p>
+  <a href="#pricing" class="cta">🚀 Get Started Free</a>
+  <br>
+  <span class="free-note">Free forever for 1 profile · No credit card needed</span>
+</section>
+
+<div class="platforms">
+  <p>WORKS ON ALL YOUR FAVORITE PLATFORMS</p>
+  <div class="platform-list">
+    <span>🎬 Netflix</span>
+    <span>▶️ YouTube</span>
+    <span>✨ Disney+</span>
+    <span>🎁 Prime Video</span>
+    <span>💚 Hulu</span>
+    <span>🍎 Apple TV+</span>
+    <span>🔵 Max</span>
+    <span>🦚 Peacock</span>
+  </div>
+</div>
+
+<section class="features">
+  <h2>Everything your family needs</h2>
+  <div class="feat-grid">
+    <div class="feat-card">
+      <div class="feat-icon">🫥</div>
+      <div class="feat-title">Real-time Blur</div>
+      <div class="feat-desc">Automatically blurs nudity and sexual scenes as they happen.</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🔇</div>
+      <div class="feat-title">Language Mute</div>
+      <div class="feat-desc">Profanity muted instantly. Subtitles stay visible.</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">⏭️</div>
+      <div class="feat-title">Scene Skip</div>
+      <div class="feat-desc">Jumps past graphic violence and picks up right after.</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🤖</div>
+      <div class="feat-title">Claude AI</div>
+      <div class="feat-desc">AI classifies content in real time — not just a keyword list.</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">👨‍👩‍👧‍👦</div>
+      <div class="feat-title">Family Profiles</div>
+      <div class="feat-desc">Kids, Teen, Family — each with their own filter settings.</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🔒</div>
+      <div class="feat-title">Parent PIN</div>
+      <div class="feat-desc">Lock settings behind a 4-digit PIN. Kids can't bypass it.</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">📱</div>
+      <div class="feat-title">iOS & Android</div>
+      <div class="feat-desc">Mobile app + Chrome extension. Works everywhere.</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🌙</div>
+      <div class="feat-title">Bedtime Mode</div>
+      <div class="feat-desc">Stricter filters auto-activate at your chosen time.</div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <h2>Simple pricing</h2>
+  <div class="price-grid">
+    <div class="price-card">
+      <div class="price-name">Free</div>
+      <div class="price-amount">$0</div>
+      <div class="price-per">forever</div>
+      <div class="price-feature">1 profile</div>
+      <div class="price-feature">Basic filters</div>
+      <div class="price-feature">Chrome extension</div>
+      <div class="price-feature">Community scene DB</div>
+      <a href="#" class="price-btn">Get Started</a>
+    </div>
+    <div class="price-card popular">
+      <div class="popular-badge">⭐ MOST POPULAR</div>
+      <div class="price-name">Pro</div>
+      <div class="price-amount">$4</div>
+      <div class="price-per">/ month</div>
+      <div class="price-feature">5 profiles</div>
+      <div class="price-feature">AI detection</div>
+      <div class="price-feature">All 8 platforms</div>
+      <div class="price-feature">Priority support</div>
+      <a href="#" class="price-btn">Start Free Trial</a>
+    </div>
+    <div class="price-card">
+      <div class="price-name">Family</div>
+      <div class="price-amount">$8</div>
+      <div class="price-per">/ month</div>
+      <div class="price-feature">Unlimited profiles</div>
+      <div class="price-feature">Priority AI</div>
+      <div class="price-feature">Family dashboard</div>
+      <div class="price-feature">Bedtime mode</div>
+      <a href="#" class="price-btn">Go Family</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Support</a>
+    <a href="#">Contact</a>
+  </div>
+  <p>© 2026 PureWatch · Family content filtering for streaming platforms</p>
+</footer>
+
+</body>
+</html>
